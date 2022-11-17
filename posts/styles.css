@@ -1,0 +1,122 @@
+* {
+  font-family: "Noto Sans KR";
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 750px;
+  margin: 50px auto;
+}
+
+.main {
+  margin-top: 60px;
+}
+
+.uploaded_image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.categories {
+  display: flex;
+  margin-top: 85px;
+}
+
+.category {
+  margin-right: 10px;
+  padding-left: 17.5px;
+  padding-right: 17.5px;
+  height: 35px;
+  background-color: #eef3f8;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 20px;
+  border: 1px solid #dce3ec;
+}
+
+.options {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.shareBtn,
+.likeBtn {
+  margin-right: 17.5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 45px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.shareBtn {
+  background-color: #eef3f8;
+}
+
+.likeBtn {
+  background-color: #516178;
+  color: white;
+}
+
+.numberOfOptions {
+  margin-left: auto;
+  line-height: 45px;
+}
+
+.footer {
+  margin-top: 25px;
+  border-top: 1px solid #ccd2db;
+  padding-top: 25px;
+  display: flex;
+}
+
+.userInfo {
+  margin-left: 17.5px;
+}
+
+.userImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.username {
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+
+.userIntroduction {
+  margin-top: 0;
+  margin-bottom: 3.5px;
+}
+
+.followBtn {
+  border: none;
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #f3595e;
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #191919;
+    color: white;
+  }
+
+  .category {
+    color: black;
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
+    <title>Blogㆍ홈</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,63 +20,93 @@
   <body>
     <div class="app">
       <div class="header">
-        <h1>
-          개발자 괴롭히는 무시무시한 모바일 앱 위변조 그 원인과 사례 파헤치기
-        </h1>
-        <p>2022.11.12ㆍEGL</p>
-      </div>
-      <div class="main">
-        <div class="contents">
+        <i
+          class="fa-solid fa-blog"
+          onclick="window.location.href = './index.html';"
+        ></i>
+        <div class="right">
+          <i class="fa-solid fa-magnifying-glass"></i>
           <img
-            src="./image/test-image.png"
-            alt="test-image.png"
-            class="uploaded_image"
-          /><br />
-          <p>
-            이번 포스트는 금융감독원이 권고하고 있고 다양한 앱들에서 보편적으로
-            발생되는 '앱 위변조'에 관하여 다뤄 보도록 하겠습니다.<br />
-          </p>
-          <h2>앱 위변조란?</h2>
-          <p>
-            앱 위변조는 모바일 앱을 불법적으로 변경하는 행위로써 위조, 변조를
-            합쳐 '위변조' 또는 'Tampering'이라 하며 이를 방어하는 기술을 '위변조
-            방지' 또는 'anti tamper'라 하고 있습니다.
-          </p>
-          <h2>앱 위변조 실제 피해 사례</h2>
-          <p>
-            현재까지 위변조 공격으로 인해 일어난 실제 피해의 사례는 아래와
-            같습니다.
-          </p>
+            src="./image/Profile.jpg"
+            alt="Profile.jpg"
+            class="userProfile"
+          />
         </div>
-        <div class="categories">
-          <div class="category">앱</div>
-          <div class="category">앱 위변조</div>
-          <div class="category">모바일</div>
-          <div class="category">금융</div>
+      </div>
+      <!-- <div class="profileMenu">
+        <div class="userInfo">
+          <img
+            src="./image/Profile.jpg"
+            alt="Profile.jpg"
+            class="settingProfile"
+          />&nbsp;
+          <h3 class="username">EGL</h3>
         </div>
         <div class="options">
-          <button class="shareBtn">
-            <i class="fa-solid fa-share"></i>
-            &nbsp;공유
-          </button>
-          <button class="likeBtn">
-            <i class="fa-solid fa-heart"></i>
-            &nbsp;좋아요
-          </button>
-          <div class="numberOfOptions">
-            <span class="views">23,145 views</span>
-            <span class="likes">1,113 likes</span>
+          <div class="setting">
+            <i class="fa-solid fa-gear"></i>&nbsp;&nbsp;<span>설정</span>
+          </div>
+        </div>
+      </div> -->
+      <div class="main">
+        <div class="blogs">
+          <div class="blog" id="asdf">
+            <h2 class="blogTitle">
+              개발자 괴롭히는 무시무시한 모바일 앱 위변조 그 원인과 사례
+              파헤치기
+            </h2>
+            <p class="blogContent">
+              이번 포스트는 금융감독원이 권고하고 있고 다양한 앱들에서
+              보편적으로 발생되는 '앱 위변조'에 관하여 다뤄 보도록 하겠습니다...
+            </p>
+            <div class="categories">
+              <div class="category">앱</div>
+              <div class="category">앱 위변조</div>
+              <div class="category">모바일</div>
+              <div class="category">금융</div>
+            </div>
+            <hr />
+            <p class="blogInfo">2022.11.12ㆍEGL</p>
+          </div>
+          <div class="blog" id="asdf">
+            <h2 class="blogTitle">
+              개발자 괴롭히는 무시무시한 모바일 앱 위변조 그 원인과 사례
+              파헤치기
+            </h2>
+            <p class="blogContent">
+              이번 포스트는 금융감독원이 권고하고 있고 다양한 앱들에서
+              보편적으로 발생되는 '앱 위변조'에 관하여 다뤄 보도록 하겠습니다...
+            </p>
+            <div class="categories">
+              <div class="category">앱</div>
+              <div class="category">앱 위변조</div>
+              <div class="category">모바일</div>
+              <div class="category">금융</div>
+            </div>
+            <hr />
+            <p class="blogInfo">2022.11.12ㆍEGL</p>
           </div>
         </div>
       </div>
-      <div class="footer">
-        <img src="./image/Profile.jpg" alt="Profile.jpg" class="userImage" />
-        <div class="userInfo">
-          <h2 class="username">EGL</h2>
-          <p class="userIntroduction">학생 이은교입니다.</p>
-          <button class="followBtn">팔로우</button>
-        </div>
-      </div>
     </div>
+    <script>
+      var menuDisplayNone = true;
+
+      document
+        .querySelector(".userProfile")
+        .addEventListener("click", function () {
+          if (menuDisplayNone == true) {
+            document.querySelector(".profileMenu").style.display = "block";
+            menuDisplayNone = false;
+          } else {
+            document.querySelector(".profileMenu").style.display = "none";
+            menuDisplayNone = true;
+          }
+        });
+
+      document.querySelector("#asdf").addEventListener("click", function () {
+        document.location.href = "./posts/post.html";
+      });
+    </script>
   </body>
 </html>
